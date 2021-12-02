@@ -14,16 +14,16 @@ int countChar(std::string pName){
 }
 
 int main(int argc, char *argv[]) {
-	if(argc<1){
-		std::cout<<1<<std::endl;
-		std::cout<<6<<std::endl;
+	if(argc<2){
+		std::cout<<"Number of lines: "<<1<<std::endl;
+		std::cout<<"Number of characters: "<< 6<<std::endl;
 } 
 else{
    
 	std::string line;
     //change name of textfile
 	std::string fileName;
-	fileName=atoi(argv[0]);
+	fileName=argv[1];
     std::ifstream myfile(fileName);
 
     while (std::getline(myfile, line)){
