@@ -6,3 +6,8 @@ counting.o: counting.cc
 
 clean:
 	 rm *.o count
+
+doc: count
+
+check: counting.cc
+	cpp counting.cc
